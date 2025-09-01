@@ -1,3 +1,30 @@
+/* ===== IGUALAR ALTURA CARDS SOBRE NOSOTROS ===== */
+.about-equal-height {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+/* ===== NAVBAR LOGO CUSTOM SIZE ===== */
+/* ===== NAVBAR LOGO CUSTOM SIZE & STYLE ===== */
+.navbar-logo {
+    height: 110px !important;
+    max-height: 120px;
+    width: auto;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.18), 0 1.5px 6px rgba(0,0,0,0.12);
+    padding: 2px;
+    transition: var(--transition);
+    display: block;
+}
+
+@media (max-width: 576px) {
+    .navbar-logo {
+        height: 70px !important;
+        max-height: 80px;
+        padding: 1px;
+    }
+}
 /* ===== CUSTOM CSS VARIABLES ===== */
 :root {
     --primary-color: #F28C28; /* Naranja principal */
@@ -127,13 +154,13 @@ html {
 /* ===== HERO SECTION ===== */
 .hero-section {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-color) 100%);
-    background-image: url('../images/hero-bg.jpg');
+    background-image: url('../images/IndependenciaInt.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     position: relative;
-    padding-top: 100px;
-    min-height: 100vh;
+    padding-top: 60px;
+    min-height: 70vh;
     display: flex;
     align-items: center;
 }
@@ -152,6 +179,19 @@ html {
     position: relative;
     z-index: 2;
     animation: fadeInUp 1s ease-out;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1.1;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
 }
 
 .hero-image {
