@@ -487,65 +487,87 @@ footer {
 
 @media (max-width: 768px) {
     :root {
-        --section-padding: 60px 0;
+        --section-padding: 32px 0;
     }
-    
+
     .hero-section {
-        padding-top: 80px;
+        padding-top: 32px;
+        min-height: 50vh;
         text-align: center;
     }
-    
+
+    .container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
     .hero-buttons .btn {
         display: block;
         width: 100%;
-        margin-bottom: 1rem;
+        margin-bottom: 0.75rem;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
     }
-    
+
     .navbar-nav {
         text-align: center;
     }
-    
+
     .navbar-nav .nav-item {
-        margin: 0.5rem 0;
+        margin: 0.25rem 0;
     }
-    
+
     .feature-item {
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
+        padding: 0.75rem;
     }
-    
+
     .office-info {
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
+        padding: 0.75rem;
     }
-    
+
+    .testimonial-card {
+        padding: 1rem;
+    }
+
+    .about-image img {
+        min-height: 120px;
+    }
+
     .cookie-notice .col-md-4 {
         text-align: center;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
     }
+}
 }
 
 @media (max-width: 576px) {
     .section-title {
+        font-size: 1.25rem;
+    }
+
+    .hero-content h1 {
         font-size: 1.75rem;
     }
-    
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-    
+
     .lead {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
-    
+
     .feature-item {
-        padding: 1rem;
+        padding: 0.5rem;
     }
-    
+
     .testimonial-card {
-        padding: 1.5rem;
+        padding: 0.75rem;
     }
-    
+
     .contact-form {
-        padding: 1.5rem;
+        padding: 0.75rem;
+    }
+    .about-image img {
+        min-height: 80px;
     }
 }
 

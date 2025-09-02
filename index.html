@@ -34,14 +34,14 @@
 
     <title>Herrajes Veiga - Seguridad y Calidad | Cerraduras y Herrajes</title>
     
+    <!-- Preload Google Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" as="style" onload="this.rel='stylesheet'">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" media="all">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="all">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" media="all">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
@@ -69,7 +69,9 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="#home">
-                    <img src="./assets/images/Logo.jpeg" alt="Logo de Herrajes Veiga, especialistas en cerraduras y herrajes de calidad y seguridad" class="navbar-logo" loading="lazy">
+                    <img src="./assets/images/Logo.jpeg" alt="Logo de Herrajes Veiga, especialistas en cerraduras y herrajes de calidad y seguridad" class="navbar-logo" loading="lazy"
+                        srcset="./assets/images/Logo.jpeg 1x, ./assets/images/Logo.jpeg 2x"
+                        sizes="(max-width: 576px) 70px, 110px">
                 </a>
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
@@ -164,7 +166,9 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="about-image about-equal-height w-100">
-                        <img src="./assets/images/Equipo.png" alt="Equipo de trabajo de Herrajes Veiga, profesionales en seguridad y herrajes" class="img-fluid rounded shadow" style="object-fit:cover; height:100%; width:100%; min-height:250px;" loading="lazy">
+                        <img src="./assets/images/Equipo.png" alt="Equipo de trabajo de Herrajes Veiga, profesionales en seguridad y herrajes" class="img-fluid rounded shadow" style="object-fit:cover; height:100%; width:100%; min-height:250px;" loading="lazy"
+                            srcset="./assets/images/Equipo.png 1x, ./assets/images/Equipo.png 2x"
+                            sizes="(max-width: 576px) 100vw, 50vw">
                     </div>
                 </div>
             </div>
