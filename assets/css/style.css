@@ -52,11 +52,20 @@
     box-sizing: border-box;
 }
 
+/* ===== ACCESIBILIDAD: Foco visible ===== */
+a:focus, button:focus, .btn:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px var(--secondary-color);
+    z-index: 10;
+}
+
 body {
     font-family: var(--font-family);
     line-height: 1.6;
     color: var(--text-color);
     overflow-x: hidden;
+    font-size: 1.05rem;
 }
 
 html {
@@ -154,7 +163,7 @@ html {
 /* ===== HERO SECTION ===== */
 .hero-section {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-color) 100%);
-    background-image: url('../images/IndependenciaInt.jpeg');
+    background-image: url('../images/IndependenciaInt.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -552,7 +561,11 @@ footer {
     }
 
     .lead {
-        font-size: 0.95rem;
+        font-size: 1.05rem;
+    }
+
+    body {
+        font-size: 1.05rem;
     }
 
     .feature-item {
