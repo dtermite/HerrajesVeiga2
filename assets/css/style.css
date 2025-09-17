@@ -188,6 +188,7 @@ html {
     position: relative;
     z-index: 2;
     animation: fadeInUp 1s ease-out;
+    min-height: 320px;
 }
 
 .hero-title {
